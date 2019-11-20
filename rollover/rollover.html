@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Rollover</title>
+		<script>
+			blueArrow = new Image;
+			blueArrow.src = "bluearrow.gif";
+			
+			redArrow = new Image;
+			redArrow.src = "redarrow.gif";
+		</script>
+	</head>
+	<body>
+		<!---->
+		<a href="webpage.html" onMouseOver="document.arrow.src = redArrow.src;" onMouseOut = "document.arrow.src = blueArrow.src;">
+			<img src="bluearrow.gif" name="arrow" width="320px" height="200px" alt="">
+		</a>
+	</body>
+</html>

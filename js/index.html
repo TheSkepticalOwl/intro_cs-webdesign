@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Javascript | Demo1</title>
+		<script language="javascript" type="text/javascript">
+			window.alert("Hello World");
+		</script>
+		<script language="javascript" type="text/javascript">
+			var hasRun = false;
+			function changeText() {
+				if(hasRun === false) {
+					document.getElementById("demo").innerHTML="some words"
+					hasRun = true;
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<!---->
+		<p id="logo">
+			CVHS
+		</p>
+		<script>
+			var elementLogo0 = document.getElementById("logo");
+			elementLogo0.innerHTML = 5+6;
+		</script>
+		<h1 id="desc">Learning to code is fun</h1>
+		<script>
+			var elementDesc0 = document.getElementById("desc");
+			elementDesc0.innerHTML = "Learning JavaScript is fun";
+		</script>
+		<p id="demo">click me</p>
+		<button type="button" onClick="changeText()">click me</button>
+		<img src="" alt=""></img>
+		<script>
+			
+		</script>
+	</body>
+</html>

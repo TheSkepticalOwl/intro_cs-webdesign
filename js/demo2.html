@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+<script language="Javascript" type="text/javascript">
+
+	function changeText(){
+		document.getElementById('demo').innerHTML = "JAVASCRIPT IS REALLY FUN!";
+	}	
+	
+</script>
+	
+<meta charset="utf-8">
+<title>Buttons | Demo2</title>
+</head>
+
+<body>
+<!--function call changeText-->
+
+	<p id="demo">
+	 	Codehs is not fun!
+	</p>
+	
+	<button type="button" onClick="changeText()">
+		Click Me!
+	</button>
+	
+<!--change html content-->
+
+	<p id="demo1">
+		Hello Class!
+	</p>
+		
+	<button type="button" onClick="document.getElementById('demo1').innerHTML ='Goodbye Class!'">
+		 Click Me!
+	 </button>
+	<!--Change html attribute--> 
+	<p> &nbsp;</p>
+	
+	<img id="myImage" src="cartoon1.jpg" alt="" style="width:100px" />
+	
+	<br /> <br />
+	
+	<button type="button" onClick="document.getElementById('myImage').src='cartoon2.png'">
+		Change Character
+	</button>
+	
+	<br />
+	
+	<button type="button" onClick="document.getElementById('myImage').src='cartoon1.jpg'">
+		Change Back 
+	</button>
+</body>
+</html>
