@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Slideshow</title>
+		<script>
+			imgArray = new Array(4);
+			
+			imgArray[0] = new Image;
+			imgArray[0].src = "lions.gif";
+			
+			imgArray[1] = new Image;
+			imgArray[1].src = "tigers.gif";
+			
+			imgArray[2] = new Image;
+			imgArray[2].src = "bears.gif";
+			
+			imgArray[3] = new Image;
+			imgArray[3].src = "ohmy.gif";
+			
+			var index = 0;
+			
+			select();
+
+			function select() {
+				index = Math.floor(Math.random() * Math.floor(4));
+				document.banner.src = imgArray[index].src;
+				setTimeout("select();", 2000);
+				return;
+			}
+		</script>
+	</head>
+	<body onLoad = "select();">
+		<img src="lions.gif" name="banner" width="400px" height="200px" alt="">
+	</body>
+</html>

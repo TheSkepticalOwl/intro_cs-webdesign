@@ -1,0 +1,124 @@
+@charset "utf-8";
+/*CSS*/
+
+/*Eliminates problem with padding*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 80%;
+    height: 1200px;
+    /*background-color: #101010;*/
+    background-image: url(dft_bkg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #333333;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1 {
+    color: #888888;
+    font-size: 60px;
+}
+
+header {
+    width: 100%;
+    height: 200px;
+    background-color: #363636;
+    color: #dadada;
+    text-align: center;
+}
+
+header h1 {
+    color: inherit;
+}
+
+nav {
+    width: 100%;
+    height: 50px;
+    background-color: #121212;
+    color: #777777;
+}
+
+nav ul {
+    /*remove bullets*/
+    list-style-type: none;
+    margin: 0%;
+    padding: 0%;
+    overflow: hidden;
+}
+
+nav li {
+    float: left;
+}
+
+nav li a {
+    display: block;
+    color: #777777;
+    text-align: center;
+    padding: 16px 16px;
+}
+
+nav a:link, a:visited {
+    color: #dbdbdb;
+    background-color: #121212;
+    text-decoration: none;
+}
+
+nav a:hover, a:active {
+    color: #adadad;
+    background-color: #271035;
+    text-decoration: underline bold;
+}
+
+#left-sidebar {
+    width: 20%;
+    height: 600px;
+    background-color: #363636;
+    color: #dadada;
+    float: left;
+}
+
+#left-sidebar a {
+    text-decoration: underline;
+    color: inherit;
+}
+
+#main-content {
+    width: 80%;
+    height: 600px;
+    background-color: #1e1e1e;
+    color: #dadada;
+    float: left;
+}
+
+#main-content a {
+    text-decoration: underline;
+    color: inherit;
+}
+
+div p {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+#lower-content {
+    width: 100%;
+    height: 300px;
+    background-color: #2a2a2a;
+    color: #dbdbdb;
+    clear: both;
+}
+
+footer {
+    width: 100%;
+    height: 50px;
+    background-color: #121212;
+    color: #a0a0a0;
+    clear: both;
+}

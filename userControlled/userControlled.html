@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Slideshow</title>
+		<script>
+			imgArray = new Array(4);
+			
+			imgArray[0] = new Image;
+			imgArray[0].src = "lions.gif";
+			
+			imgArray[1] = new Image;
+			imgArray[1].src = "tigers.gif";
+			
+			imgArray[2] = new Image;
+			imgArray[2].src = "bears.gif";
+			
+			imgArray[3] = new Image;
+			imgArray[3].src = "ohmy.gif";
+			
+			var index = 0;
+
+			function goBack() {
+				if(index>0) {
+					index--;
+					document.slideshow.src = imgArray[index].src;
+				} else if (index == 0) {
+					index = 4;
+					document.slideshow.src = imgArray[index].src;
+				}
+				return;
+			}
+
+			function goNext() {
+				if(index<3) {
+					index++;
+					document.slideshow.src=imgArray[index].src;
+				} else if (index == 4) {
+					index = 0;
+					document.slideshow.src = imgArray[index].src;
+				}
+			return;
+			}
+		</script>
+	</head>
+	<body>
+		<h1 align="center">JavaScript Side Show</h1>
+		<p align="center">
+			<img src="lions.gif" name="slideshow" width="400px" height="200px">
+		</p>
+		<h3 align="center">
+			<a href="javascript:goBack()">Back</a>&nbsp; &nbsp; &nbsp; &nbsp;
+			<a href="javascript:goNext()">Next</a>
+		</h3>
+	</body>
+</html>

@@ -1,0 +1,109 @@
+@charset "utf-8";
+/*CSS*/
+
+/*Eliminates problem with padding*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 80%;
+    height: 1200px;
+    background-color: #101010;
+    background-image: url(def_bkg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #333333;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1 {
+    color: #888888;
+}
+
+header {
+    width: 100%;
+    height: 200px;
+    background-color: #444444;
+    color: #777777;
+    text-align: center;
+}
+
+nav {
+    width: 100%;
+    height: 50px;
+    background-color: #333333;
+    color: #777777;
+}
+
+nav ul {
+    /*remove bullets*/
+    list-style-type: none;
+    margin: 0%;
+    padding: 0%;
+    overflow: hidden;
+}
+
+nav li {
+    float: left;
+}
+
+nav li a {
+    display: block;
+    color: #777777;
+    text-align: center;
+    padding: 16px 16px;
+}
+
+nav a:link, a:visited {
+    color: #999999;
+    background-color: #333333;
+    text-decoration: none;
+}
+
+nav a:hover, a:active {
+    color: #bbbbbb;
+    background-color: #696969;
+    text-decoration: underline bold;
+}
+
+#left-sidebar {
+    width: 20%;
+    height: 600px;
+    background-color: #666666;
+    color: #888888;
+    float: left;
+}
+
+#main-content {
+    width: 80%;
+    height: 600px;
+    background-color: #444444;
+    color: #888888;
+    float: left;
+}
+
+div p {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+#lower-content {
+    width: 100%;
+    height: 300px;
+    background-color: #555555;
+    color: #999999;
+    clear: both;
+}
+
+footer {
+    width: 100%;
+    height: 50px;
+    background-color: #333333;
+    color: #888888;
+    clear: both;
+}
