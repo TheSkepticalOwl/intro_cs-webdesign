@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <title>Scripting Languages</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script>
+        imgArray = new Array(4);
+			
+			imgArray[0] = new Image;
+			imgArray[0].src = "js-logo.png";
+			
+			imgArray[1] = new Image;
+			imgArray[1].src = "python-logo.png";
+			
+			imgArray[2] = new Image;
+			imgArray[2].src = "php-logo.png";
+			
+			var index = 0;
+
+			function goBack() {
+				if(index>0) {
+					index--;
+					document.slideshow.src = imgArray[index].src;
+				} else if (index == 0) {
+					index = 3;
+					document.slideshow.src = imgArray[index].src;
+				}
+				return;
+			}
+
+			function goNext() {
+				if(index<2) {
+					index++;
+					document.slideshow.src=imgArray[index].src;
+				} else if (index == 3) {
+					index = 0;
+					document.slideshow.src = imgArray[index].src;
+				}
+			return;
+			}
+    </script>
+</head>
+<body>
+    <!---->
+    <header><h1>Scripting Languages</h1></header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="page2.html">Web Languages</a></li>
+            <li>
+                <div class="dropdown">
+                    <button class="dropbtn">Software Languages
+                    <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                    <a href="page3.html">Scripting Languages</a>
+                    <a href="page4.html">Compiled Languages</a>
+                    </div>
+                </div>
+              </li>
+        </ul>
+    </nav>
+    <div id="left-sidebar"></div>
+    <div id="main-content">
+        <div id="langs">
+		    <p style="text-align: center;">
+			    <img src="js-logo.png" name="slideshow" height="200px">
+		    </p>
+		    <h3 style="text-align: center;">
+			    <a href="javascript:goBack()">Back</a>&nbsp; &nbsp; &nbsp; &nbsp;
+			    <a href="javascript:goNext()">Next</a>
+		    </h3>
+        </div>
+    </div>
+    <div id="lower-content"></div>
+    <footer><p>Created by Kenneth Brown <br> &copy;2019-2020 all rights reserved</p></footer>
+</body>

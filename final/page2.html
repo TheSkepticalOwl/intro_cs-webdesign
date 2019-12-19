@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <title>Web Languages</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script>
+        if (document.images) {
+            offButton = new Image
+            onButton = new Image
+
+            offButton.src = "html-logo.png"
+            onButton.src = "css-logo.png"
+        } else {
+            offButton = ""
+            onButton = ""
+            document.myButton = ""
+        }
+    </script>
+</head>
+<body>
+    <!---->
+    <header><h1>Web Languages</h1></header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="page2.html">Web Languages</a></li>
+            <li>
+                <div class="dropdown">
+                    <button class="dropbtn">Software Languages
+                    <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                    <a href="page3.html">Scripting Languages</a>
+                    <a href="page4.html">Compiled Languages</a>
+                    </div>
+                </div>
+              </li>
+        </ul>
+    </nav>
+    <div id="left-sidebar"></div>
+    <div id="main-content">
+        <div id="langs">
+            <!--Web Languages-->
+            <div id="html">
+                <a href="#" onMouseover="document.myButton.src=onButton.src" onMouseout="document.myButton.src=offButton.src">
+                    <img src="html-logo.png" alt="button" height="150px" name="myButton">
+                </a>
+                <h2>HTML</h2>
+                <p>HTML is the basis of the web. It uses markup to define elements that can be modified using CSS and JacaScript.</p>
+            </div>
+            <div id="css">
+                <img src="css-logo.png" alt="CSS Logo" height="150px" />
+                <h2>CSS</h2>
+                <p>CSS is used to change how HTML elements look and feel. It uses a simple structure designed to make it easy for programmers and web designers to use.</p>
+            </div>
+            <div id="javascript">
+                <img src="js-logo.png" alt="JS logo" height="150px" />
+                <h2>JavaScript</h2>
+                <p>JavaScript is used for creating games as well as improving some user experience in websites. Although optional, it is usually used on websites to change different elements of a page and make it easier to create great user experience.</p>
+            </div>
+        </div>
+    </div>
+    <div id="lower-content"></div>
+    <footer><p>Created by Kenneth Brown <br> &copy;2019-2020 all rights reserved</p></footer>
+</body>
