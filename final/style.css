@@ -102,6 +102,10 @@ nav a:hover, a:active {
     color: inherit;
 }
 
+#main-content #langs {
+    text-align: center;
+}
+
 div p {
     padding-left: 5%;
     padding-right: 5%;
